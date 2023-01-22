@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg2
+sqlalchemy-utils
+pydantic
+aiogram==2.22.2
+#aiofiles
+#ijson
+asyncio
+sentence-transformers
+pandas
+emoji

@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  web:
+    environment: 
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - TOKEN=${TOKEN}
+    build: backend/
+    volumes:
+      - type: bind
+        source: ${DATA_PATH}
+        target: /data
+    ports:
+      - "5001:8000"
+    depends_on:
+      - postgres
+    command: /entrypoint.sh
+  postgres:
+    environment:
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    image: "postgres:alpine"
+    ports:
+      - "5432:5432"
+
+volumes:
+  data:
