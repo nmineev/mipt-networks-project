@@ -19,3 +19,4 @@
 
 ### Demonstration
 Демонстрация работы бота: https://disk.yandex.ru/i/b5Af0TB4cAEmuA
+![demo](demka-papers-recommender-bot.gif)
